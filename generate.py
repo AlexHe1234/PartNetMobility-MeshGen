@@ -429,8 +429,8 @@ if __name__ == '__main__':
     parser.add_argument('-o', '--overwrite', action='store_true', default=False, help='Overwrite previously generated dataset.')
     
     parser.add_argument('--seed', type=int, default=0, help='Seed for random number generator.')
-    parser.add_argument('--mpath', type=str, default='', help='Path to the manifold generation executable, only required in "manifold" mode.')  # /afs/cs.stanford.edu/u/alexhe/generic_rigging/ImplicitRigging/Manifold/build/manifold
-    parser.add_argument('--spath', type=str, default='', help='Path to the mesh simplification executable, optional, only used in "manifold" mode.')  # /afs/cs.stanford.edu/u/alexhe/generic_rigging/ImplicitRigging/Manifold/build/simplify
+    parser.add_argument('--mpath', type=str, default='', help='Path to the manifold generation executable, only required in "manifold" mode.')
+    parser.add_argument('--spath', type=str, default='', help='Path to the mesh simplification executable, optional, only used in "manifold" mode.')
     parser.add_argument('-f', '--frame', type=int, default=100, help='Number of frames to generate for each instance.')
 
     args = parser.parse_args()
